@@ -1,0 +1,8 @@
+[
+  { "title": "Margherita", "price": "$12", "image": "/images/menu-image-1.avif" },
+  { "title": "Pepperoni Blast", "price": "$14", "image": "/images/menu-image-2.jpg" },
+  { "title": "Truffle Mushroom", "price": "$16", "image": "/images/menu-image-3.avif" },
+  { "title": "Vegan Delight", "price": "$13", "image": "/images/menu-image-4.avif" },
+  { "title": "Seafood Supreme", "price": "$18", "image": "/images/menu-image-5.jpg" },
+  { "title": "Four Cheese", "price": "$15", "image": "/images/menu-image-6.jpg" }
+]

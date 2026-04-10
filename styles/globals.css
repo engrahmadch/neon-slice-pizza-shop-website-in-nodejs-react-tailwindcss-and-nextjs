@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=Orbitron:wght@500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #ff4500;
+  --color-secondary: #0a0a0a;
+  --color-accent: #00ffff;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-secondary text-white antialiased;
+    font-family: 'Exo 2', sans-serif;
+    min-height: 100vh;
+    background-image:
+      radial-gradient(circle at 14% 16%, rgba(255, 69, 0, 0.2), transparent 40%),
+      radial-gradient(circle at 86% 2%, rgba(0, 255, 255, 0.18), transparent 28%),
+      linear-gradient(145deg, #050505 0%, #0a0a0a 55%, #101010 100%);
+    background-attachment: fixed;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-futurist {
+    font-family: 'Orbitron', sans-serif;
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .neon-border {
+    box-shadow:
+      0 0 0 1px rgba(0, 255, 255, 0.35),
+      inset 0 0 28px rgba(0, 255, 255, 0.08);
+  }
+
+  .scanlines {
+    position: relative;
+  }
+
+  .scanlines::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      transparent 0,
+      rgba(0, 255, 255, 0.03) 40%,
+      transparent 60%
+    );
+    background-size: 100% 8px;
+    mix-blend-mode: screen;
+  }
+}
