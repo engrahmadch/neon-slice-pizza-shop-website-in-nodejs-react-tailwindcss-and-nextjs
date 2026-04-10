@@ -1,4 +1,4 @@
-# Neon Slice Pizza Portfolio
+# Neon Slice Pizza Shop Website Portfolio Project
 
 ## Project Overview
 
